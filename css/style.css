@@ -1,4 +1,11 @@
 #input {
   width:500px;
-  height:500px;
+}
+
+#display {
+  margin-top:20px;
+}
+
+body {
+  text-align:center;
 }
