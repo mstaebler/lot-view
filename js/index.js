@@ -6,12 +6,12 @@ function colorZone(zoneArr, x, div) {
   if (zoneArr[0] % 2 === x % 2) {
     if (x >= zoneArr[0] && x <= zoneArr[1]) {
       div.className = zoneArr[2] + "-side-border";
-      if (x === zoneArr[0])
-        div.className =
-          zoneArr[2] + "-bottom-border " + zoneArr[2] + "-side-border";
-      if (x === zoneArr[1])
-        div.className =
-          zoneArr[2] + "-top-border " + zoneArr[2] + "-side-border";
+      // if (x === zoneArr[0])
+      //   div.className =
+      //     zoneArr[2] + "-bottom-border " + zoneArr[2] + "-side-border";
+      // if (x === zoneArr[1])
+      //   div.className =
+      //     zoneArr[2] + "-top-border " + zoneArr[2] + "-side-border";
     }
   }
 }
@@ -42,7 +42,8 @@ function generateRow(begin, end, rowId) {
     div.style.height = "50px";
     div.style.backgroundColor = "red";
     div.style.color = "white";
-    // div.style.border = "1px solid black"
+    div.style.borderTop = "1px solid black";
+    div.style.borderBottom = "1px solid black";
     div.id = String(x);
     div.innerHTML = String(x);
 
