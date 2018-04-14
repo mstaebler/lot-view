@@ -1,89 +1,89 @@
 #input {
-  width:500px;
+  width: 500px;
 }
 
 #display {
-  margin-top:20px;
+  margin-top: 20px;
 }
 
 body {
-  text-align:center;
+  text-align: center;
 }
 
 .gold-side-border {
   border-left: 5px solid gold;
-  border-right:5px solid gold;
+  border-right: 5px solid gold;
 }
 
-.gold-top-border{
+.gold-top-border {
   border-top: 5px solid gold;
 }
 
-.gold-bottom-border{
+.gold-bottom-border {
   border-bottom: 5px solid gold;
 }
 
 .fivestar-side-border {
   border-left: 5px solid lightblue;
-  border-right:5px solid lightblue;
+  border-right: 5px solid lightblue;
 }
 
-.fivestar-top-border{
+.fivestar-top-border {
   border-top: 5px solid lightblue;
 }
 
-.fivestar-bottom-border{
+.fivestar-bottom-border {
   border-bottom: 5px solid lightblue;
 }
 
 .pc-side-border {
   border-left: 5px solid darkblue;
-  border-right:5px solid darkblue;
+  border-right: 5px solid darkblue;
 }
 
-.pc-top-border{
+.pc-top-border {
   border-top: 5px solid darkblue;
 }
 
-.pc-bottom-border{
+.pc-bottom-border {
   border-bottom: 5px solid darkblue;
 }
 
 .zoneone-side-border {
   border-left: 5px solid darkgrey;
-  border-right:5px solid darkgrey;
+  border-right: 5px solid darkgrey;
 }
 
-.zoneone-top-border{
+.zoneone-top-border {
   border-top: 5px solid darkgrey;
 }
 
-.zoneone-bottom-border{
+.zoneone-bottom-border {
   border-bottom: 5px solid darkgrey;
 }
 
 .zonetwo-side-border {
   border-left: 5px solid teal;
-  border-right:5px solid teal;
+  border-right: 5px solid teal;
 }
 
-.zonetwo-top-border{
+.zonetwo-top-border {
   border-top: 5px solid teal;
 }
 
-.zonetwo-bottom-border{
+.zonetwo-bottom-border {
   border-bottom: 5px solid teal;
 }
 
 .zonethree-side-border {
   border-left: 5px solid lightgrey;
-  border-right:5px solid lightgrey;
+  border-right: 5px solid lightgrey;
 }
 
-.zonethree-top-border{
+.zonethree-top-border {
   border-top: 5px solid lightgrey;
 }
 
-.zonethree-bottom-border{
+.zonethree-bottom-border {
   border-bottom: 5px solid lightgrey;
 }

@@ -1,45 +1,46 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Lot View</title>
-  
-  
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 
-  
+
 </head>
 
 <body>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm text-center">
-      <h1>Lot View</h1>
-      <p>Copy and paste all of the data from the lot check report on dash. Then click generate.</p>
-      <p>Green stalls are occupied and show what vehicle class. Red stalls are empty.</p>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm text-center">
+        <h1>Lot View</h1>
+        <p>Copy and paste all of the data from the lot check report on dash. Then click generate.</p>
+        <p>Green stalls are occupied and show what vehicle class. Red stalls are empty.</p>
+      </div>
     </div>
-  </div>
-  <div class="row">
-  <div class="col-sm text-center">
-  <textarea id="input">
+    <div class="row">
+      <div class="col-sm text-center">
+        <textarea id="input">
 
   </textarea>
-  <div class="col-sm text-center">
-<button type="button" class="btn btn-secondary" onClick="onClick()">Generate</button>
-</div>
-</div>
-</div>
-<div id="display" class="row"></div>
-  
-  
-
-    <script  src="js/index.js"></script>
+        <div class="col-sm text-center">
+          <button type="button" class="btn btn-secondary" onClick="onClick()">Generate</button>
+        </div>
+      </div>
+    </div>
+    <div id="display" class="row"></div>
 
 
-</div>
+
+    <script src="js/index.js"></script>
+
+
+  </div>
 </body>
 
 </html>

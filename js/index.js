@@ -3,14 +3,15 @@
 // zoneArr[first stall, last stall, zoneName]
 function colorZone(zoneArr, x, div) {
   //test to see if the zone is odd or even and if that matches the current stall skip if not.
-  if((zoneArr[0] % 2) === (x % 2)){
+  if (zoneArr[0] % 2 === x % 2) {
     if (x >= zoneArr[0] && x <= zoneArr[1]) {
       div.className = zoneArr[2] + "-side-border";
       if (x === zoneArr[0])
         div.className =
           zoneArr[2] + "-bottom-border " + zoneArr[2] + "-side-border";
       if (x === zoneArr[1])
-        div.className = zoneArr[2] + "-top-border " + zoneArr[2] + "-side-border";
+        div.className =
+          zoneArr[2] + "-top-border " + zoneArr[2] + "-side-border";
     }
   }
 }
