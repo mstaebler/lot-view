@@ -2,17 +2,11 @@
 
 // zoneArr[first stall, last stall, zoneName]
 function colorZone(zoneArr, x, div) {
-  //test to see if the zone is odd or even and if that matches the current stall skip if not.
-  if (zoneArr[0] % 2 === x % 2) {
-    if (x >= zoneArr[0] && x <= zoneArr[1]) {
-      div.className = zoneArr[2] + "-side-border";
-      // if (x === zoneArr[0])
-      //   div.className =
-      //     zoneArr[2] + "-bottom-border " + zoneArr[2] + "-side-border";
-      // if (x === zoneArr[1])
-      //   div.className =
-      //     zoneArr[2] + "-top-border " + zoneArr[2] + "-side-border";
-    }
+  if(zoneArr[0] === x){
+    div.className = zoneArr[2] + "-bottom-border";
+  }
+  if(zoneArr[1] === x){
+    div.className = zoneArr[2] + "-top-border";
   }
 }
 
@@ -38,14 +32,14 @@ function generateRow(begin, end, rowId) {
     zones.forEach(function(element) {
       colorZone(element, x, div);
     });
-    div.style.width = "50px";
-    div.style.height = "50px";
+    div.style.width = "70px";
+    div.style.height = "25px";
     div.style.backgroundColor = "red";
     div.style.color = "white";
     div.style.borderTop = "1px solid black";
     div.style.borderBottom = "1px solid black";
     div.id = String(x);
-    div.innerHTML = String(x);
+    div.innerHTML = "&nbsp"+String(x);
 
     document.getElementById(String(rowId)).appendChild(div);
   }
@@ -75,13 +69,17 @@ function generateLot() {
 
 function styleZone(start, end, color) {
   for (var x = start; x <= end; x += 2) {
-    console.log("working");
     document.getElementById(String(x)).style.boxShadow =
       "0px 0px 2px 0px" + String(color);
   }
 }
 
+function hideHeader(){
+  document.getElementById("header").className = "hide";
+}
+
 function onClick() {
+  hideHeader();
   generateLot();
   var lotStrings = [],
     lot = [];
@@ -115,12 +113,12 @@ function onClick() {
 
     lot.push(tempObj);
   });
-  //console.log(lot);
+
   lot.forEach(function(obj) {
     var stall = document.getElementById(String(obj.stall));
     if (stall) {
       stall.style.backgroundColor = "green";
-      stall.innerHTML = String(obj.stall) + "<br />" + String(obj.carClass);
+      stall.innerHTML = "&nbsp"+ String(obj.stall) + "&nbsp" + "("+String(obj.carClass)+")";
     }
     styleZone(100, 128, "black");
   });

@@ -3,13 +3,16 @@
 }
 
 #display {
-  width:80%;
+  width:90%;
   margin: auto;
   margin-top: 20px;
 }
 
-body {
-  text-align: center;
+.hide {
+  display:none;
+}
+
+.night-mode {
   background-color: black;
   color: white;
 }
